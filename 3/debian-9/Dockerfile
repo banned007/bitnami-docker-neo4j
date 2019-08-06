@@ -22,6 +22,6 @@ ENV BITNAMI_APP_NAME="neo4j" \
 
 EXPOSE 7474 7473 8756
 
-USER 1001
+USER 1000
 ENTRYPOINT [ "/app-entrypoint.sh" ]
 CMD [ "nami", "start", "--foreground", "neo4j" ]
