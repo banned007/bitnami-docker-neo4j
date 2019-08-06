@@ -11,3 +11,5 @@ services:
 volumes:
   neo4j_data:
     driver: local
+environmet: 
+  - NEO4J_PASSWORD='bitnami'
