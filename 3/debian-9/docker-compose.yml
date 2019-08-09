@@ -8,8 +8,7 @@ services:
       - '7687:7687'
     volumes:
       - 'neo4j_data:/bitnami'
+    command: /bitnami/CSVs/dbconfig.sh
 volumes:
   neo4j_data:
     driver: local
-environmet: 
-  - NEO4J_PASSWORD='bitnami'
